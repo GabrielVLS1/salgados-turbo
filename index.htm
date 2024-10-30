@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados Turbo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title" id="marca">Salgados Turbo</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-salgateria" class="nav-link"> <!-- Removendo classe "active"-->
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li> -->
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        
+        <section id="sobre-salgateria">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="https://www.assai.com.br/sites/default/files/styles/otimizado/public/shutterstock_1202031454_easy-resize.com_.jpg?itok=B54UMsdo" alt="">
+                        <div class="carousel-caption">
+                            <h1>Salgados com toque de alta gastronomia</h1>
+                            <p>Somos os maiores vendedores de salgados que existem!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://cursos.ce.senac.br/wp-content/uploads/2022/06/salgados-comerciais.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h1>Não quer sair de casa?</h1>
+                            <p>A Sagados Turbo vai até você! Temos salgados prontos ou congelados</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-salgados-para-festa.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h1>Salgados fritos e assados</h1>
+                            <p>Deliciosos e com a qualidade que você procura!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+    
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://scontent.fcgh23-1.fna.fbcdn.net/v/t39.30808-6/310457575_566055218859222_772579781362446594_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=iQH8h7bguJEQ7kNvgEB2pfh&_nc_zt=23&_nc_ht=scontent.fcgh23-1.fna&_nc_gid=AXtdKxBe0xU_BPKpm8j8En1&oh=00_AYDwhLXmmnCazk6EA4k8cl03Czj3P4ZwkWHxQ9w53p1xIA&oe=6726947D" class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 id="sobre-titulo">A Salgados <span class="text-colored">Turbo</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil, necessitatibus nisi asperiores aliquid aliquam voluptates rem. Quae accusamus similique consectetur labore iure. Nulla aliquam mollitia suscipit nemo exercitationem doloribus?
+                                <br><br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere sint, quasi eos mollitia rem accusantium. Sint, pariatur. Impedit ducimus, accusamus ex totam in nulla commodi at dignissimos ab similique.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quia hic cum quam! Illo necessitatibus possimus blanditiis veniam, reprehenderit iusto tempora, dolor est unde quidem animi, dolore atque error sequi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div id="qualidades" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">• EXPERIÊNCIA <span class="text-colored">CULINÁRIA</span> •</h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div id="card-icons">
+                            <i class="bi bi-gem"></i>
+                            <h3 class="section-title text-colored fs-4">
+                                Qualidade
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo ex beatae voluptatem aspernatur cum suscipit illum neque ipsam eos architecto iure sequi deleniti, eveniet officiis veritatis excepturi fuga tempore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="card-icons">
+                            <i class="bi bi-box-seam"></i>
+                            <h3 class="section-title text-colored fs-4">
+                                Produção
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo ex beatae voluptatem aspernatur cum suscipit illum neque ipsam eos architecto iure sequi deleniti, eveniet officiis veritatis excepturi fuga tempore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="card-icons">
+                            <i class="bi bi-truck"></i>
+                            <h3 class="section-title text-colored fs-4">
+                                Entrega
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo ex beatae voluptatem aspernatur cum suscipit illum neque ipsam eos architecto iure sequi deleniti, eveniet officiis veritatis excepturi fuga tempore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        • Nosso <span class="text-colored">cardápio</span> •
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fritos" class="fw-bold text-start nav-link text-colored active">FRITOS</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#assados" class="fw-bold text-start nav-link text-colored">ASSADOS</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#especiais" class="fw-bold text-start nav-link text-colored">ESPECIAIS</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">DOCES</button>
+                            
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="fritos"> <!-- conteúdo das abas -->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                            <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Bolinha-de-queijo-450x450.jpg" alt="Bolinha de Queijo">
+                                            <h5 class="text-colored fw-bold mt-2">Bolinha de Queijo</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/coxinha-frango-aberta-450x450.jpg" alt="Coxinha">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Bolinha-de-queijo-450x450.jpg" alt="Bolinha de Queijo">
+                                        <h5 class="text-colored fw-bold mt-2">Bolinha de Queijo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/coxinha-frango-aberta-450x450.jpg" alt="Coxinha">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Bolinha-de-queijo-450x450.jpg" alt="Bolinha de Queijo">
+                                        <h5 class="text-colored fw-bold mt-2">Bolinha de Queijo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/coxinha-frango-aberta-450x450.jpg" alt="Coxinha">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Bolinha-de-queijo-450x450.jpg" alt="Bolinha de Queijo">
+                                        <h5 class="text-colored fw-bold mt-2">Bolinha de Queijo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/coxinha-frango-aberta-450x450.jpg" alt="Coxinha">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="assados"> <!-- conteúdo das abas -->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/empadas-palmito-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Empada de Palmito</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/triang-de-calab-assado-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Esfiha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/empadas-palmito-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Empada de Palmito</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/triang-de-calab-assado-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Esfiha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/empadas-palmito-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Empada de Palmito</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/triang-de-calab-assado-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Esfiha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/empadas-palmito-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Empada de Palmito</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/triang-de-calab-assado-450x450.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Esfiha</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="tab-pane" id="especiais"> <!-- conteúdo das abas -->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/bacalhau-9-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Croquete de Bacalhau</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Coxinha-3-queijos-1-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha 3 Queijos</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/bacalhau-9-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Croquete de Bacalhau</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Coxinha-3-queijos-1-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha 3 Queijos</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/bacalhau-9-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Croquete de Bacalhau</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Coxinha-3-queijos-1-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha 3 Queijos</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/bacalhau-9-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Croquete de Bacalhau</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/Coxinha-3-queijos-1-450x450.jpg" alt="Croquete de Bacalhau">
+                                        <h5 class="text-colored fw-bold mt-2">Coxinha 3 Queijos</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="pratos-principais"> <!-- conteúdo das abas -->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div id="card-cardapio">
+                                        <img class="d-block w-100" src="https://acasadosalgado.com.br/wp-content/uploads/2021/04/churros-dl-450x450.jpg" alt="Mini Churros de Doce de Leite">
+                                        <h5 class="text-colored fw-bold mt-2">Mini Churros de Doce de Leite</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                    
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">• Fale <span class="text-colored">conosco</span> •</h2>
+                </div>
+                <div class="row" id="contato">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="text" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="text" id="telefone" name="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea type="text" id="mensagem" name="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form> 
+                    </div>
+                    <div class="col-md-5" id="redes">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 ms-2 me-2">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Salgado Turbo nº 999 - Bairro Salgado Turbo - Salgado Turbo - ST
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

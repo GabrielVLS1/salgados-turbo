@@ -1,0 +1,222 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    /* background-color: rgba(189, 74, 32, 0.723); */
+    background-image: linear-gradient( rgba(189, 74, 32) 10%,  rgba(189, 74, 32, 0.9), rgba(189, 74, 32, 0.7));
+    position: fixed;
+    width: 100%;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: rgb(205, 88, 46);
+}
+
+#cabecalho .nav .nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+/* .navbar-brand {
+    font-family: Pacifico, cursive;
+} */
+
+.navbar-toggler {
+    background-color: rgb(233, 226, 220);
+}
+
+#marca{
+    font-family: "Satisfy", cursive;
+    font-size: 29px;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.section-title {
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    
+}
+
+.section-title span {
+    font-weight: bold;
+    color: rgb(50, 46, 46);
+}
+
+h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* cor do texto */
+}
+
+.carousel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ajuste a opacidade conforme necessário */
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2; /* para garantir que o texto fique acima do overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: 2px solid;
+    /* font-size: 2em; */
+    /* text-align: center; */
+    padding: 20px;
+    /* border-radius: 8px; */
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.carousel-caption h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.carousel-caption  p{
+    margin-top: 2.5%;
+    font-size: 22px;
+} 
+
+/* #sobre-salgateria h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+} */
+
+#sobre-titulo{
+    margin-bottom: 30px;
+    font-family: "Satisfy", cursive;
+}
+
+
+
+#qualidades {
+    background-color: white;
+}
+
+.text-colored,  #card-icons > i{
+    color: rgb(145, 0, 0);
+}
+
+#card-icons{
+    text-align: center;
+    border: 2px solid rgb(145, 0, 0);
+    margin-bottom: 14%;
+    padding: 6%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#card-icons > i {
+    font-size: 80px;
+}
+
+#card-icons > h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#card-icons p{
+    padding-top: 5%;
+    text-align: center;
+}
+
+
+
+.tab-pane .col-md-3 {
+    margin-bottom: 2%;
+    /* border-radius: 15px; */
+    /* background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid ;
+    margin-left: 1px;  */
+} 
+
+#card-cardapio {
+    padding: 6px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid ; */
+}
+
+
+#sobre-salgateria, #cardapio {
+    background-color: rgb(250, 175, 84);
+}
+
+
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button{
+    background-color: rgb(187, 29, 15);
+    color: white;
+}
+
+.nav-cardapio .nav-link:hover{
+    color:rgb(187, 29, 15);
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+#contato {
+    margin-top: 2.5%;
+}
+
+#redes {
+    margin-top: 2.5%;
+}
+
+
+@media (max-width: 767px){
+    .carousel-item img{
+        height: 280px;
+    }
+}
